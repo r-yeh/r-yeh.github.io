@@ -11,7 +11,7 @@ body,html {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(133deg, rgba(2,59,209, 0.72), rgba(0,212,255, 0.53)), url("landscape 4.jpg") no-repeat center;
+  background: linear-gradient(133deg, rgba(52,54,66, 0.8), rgba(19,19,20, 0.7)), url("landscape 4.jpg") no-repeat center;
   background-size: cover;
 
 }
