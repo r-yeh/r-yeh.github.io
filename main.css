@@ -3,7 +3,7 @@ body,html {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background: #333333;
+  background: white;
 
 }
 
@@ -11,7 +11,7 @@ body,html {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background: url("landscape.jpeg") no-repeat center;
+  background: linear-gradient(133deg, rgba(2,59,209, 0.72), rgba(0,212,255, 0.53)), url("landscape 4.jpg") no-repeat center;
   background-size: cover;
 
 }
@@ -45,6 +45,6 @@ body,html {
 
 main {
   text-align: center;
-  color: white;
+  color: black;
 
 }
