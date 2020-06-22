@@ -7,10 +7,9 @@ body,html {
 
 }
 
-.head {
+header {
   position: relative;
   height: 100vh;
-  overflow: hidden;
   background: linear-gradient(133deg, rgba(52,54,66, 0.8), rgba(19,19,20, 0.7)), url("landscape 4.jpg") no-repeat center;
   background-size: cover;
 
@@ -21,10 +20,9 @@ body,html {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  overflow: hidden;
   text-align: center;
   color: white;
-  font-weight: bold;
+  overflow: hidden;
 
 }
 
@@ -33,6 +31,8 @@ body,html {
   border: 3px solid white;
   border-radius: 5px;
   padding: 8px 15px;
+  letter-spacing: 10px;
+  font-weight: bold;
 
 }
 
@@ -40,11 +40,78 @@ body,html {
 .sub {
   display: block;
   font-size: 20px;
+  overflow: hidden;
+
+}
+
+.navBar {
+  overflow: hidden;
+
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 40px;
+
+}
+
+nav.show{
+  transition: all 0.25s ease-in;
+  background-color: #3A3A3A;
+
+}
+
+nav.remove {
+  transition: all 0.25s ease-in;
+  background-color: transparent;
+
+}
+
+.homeBorder {
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 12px 11px;
+  font-weight: bolder;
+  color: white;
+
+}
+
+.projectButton {
+  color: #E3DFDE;
+
+}
+
+.aboutButton {
+  color: #E3DFDE;
+
+}
+
+.navBar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 5px;
 
 }
 
 main {
   text-align: center;
   color: black;
+
+}
+
+.MyProjects {
+  font-size: 18px;
+  line-height: 35px;
+
+}
+
+.AboutMe {
+  font-size: 18px;
+  line-height: 35px;
 
 }
