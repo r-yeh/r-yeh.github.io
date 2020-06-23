@@ -1,6 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Ryan Yeh</title>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   </head>
@@ -12,15 +13,18 @@
       <div id="home" class="head">
         <div class="headText">
           <h1><span>RYAN YEH</span></h1>
-          <span class="sub">Second Year Software Engineering Student at McMaster University</span>
+          <span class="sub">Software Engineering Student at McMaster University - Second Year</span>
         </div>
       </div>
 
       <nav>
-        <div class="navBar">
+        <div class="navBar" id="mynavBar">
               <a href="#home"><span class="homeBorder">R Y</span></a>
               <a href="#projects"><span class="projectButton">Projects</span></a>
               <a href="#about"><span class="aboutButton">About Me</span></a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </div>
       </nav>
 
@@ -53,6 +57,15 @@
 
        	};
       });
+
+      function myFunction() {
+        var x = document.getElementById("mynavBar");
+        if (x.className === "navBar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navBar";
+        }
+      }
 
     </script>
 

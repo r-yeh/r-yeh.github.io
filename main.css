@@ -33,6 +33,7 @@ header {
   padding: 8px 15px;
   letter-spacing: 10px;
   font-weight: bold;
+  overflow: hidden;
 
 }
 
@@ -95,6 +96,48 @@ nav.remove {
   text-decoration: none;
   margin-left: 15px;
   margin-right: 5px;
+
+}
+
+.navBar .icon {
+  display: none;
+  color: white;
+  margin-top: 10px;
+
+}
+
+@media screen and (max-width: 900px) {
+  .navBar a:not(:first-child) {display: none;}
+  .navBar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navBar a.icon:hover {
+    background-color: grey;
+
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navBar.responsive {position: relative;}
+  .navBar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navBar {
+    transition: all 0.25s ease-in;
+    background-color: #3A3A3A;
+
+  }
+
+  .navBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 
 }
 
