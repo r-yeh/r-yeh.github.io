@@ -22,7 +22,6 @@ header {
   transform: translate(-50%,-50%);
   text-align: center;
   color: white;
-  overflow: hidden;
 
 }
 
@@ -42,6 +41,26 @@ header {
   display: block;
   font-size: 20px;
   overflow: hidden;
+  margin-bottom: 30px;
+
+}
+
+.contact {
+  padding: 10px 24px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s all;
+  font-weight: bold;
+
+
+}
+
+.contact:hover {
+  background-color: #E3DFDE;
+  opacity: 0.8;
 
 }
 
@@ -54,17 +73,16 @@ nav {
   position: fixed;
   width: 100%;
   line-height: 40px;
+  transition: 0.3s all;
 
 }
 
 nav.show {
-  transition: all 0.25s ease-in;
   background-color: #3A3A3A;
 
 }
 
 nav.remove {
-  transition: all 0.25s ease-in;
   background-color: transparent;
 
 }
@@ -148,7 +166,7 @@ nav.remove {
   }
 
   .navBar {
-    transition: all 0.25s ease-in;
+    transition: 0.3s all;
     background-color: #3A3A3A;
 
   }
