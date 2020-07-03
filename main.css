@@ -10,7 +10,7 @@ body,html {
 header {
   position: relative;
   height: 100vh;
-  background: linear-gradient(133deg, rgba(52,54,66, 0.8), rgba(19,19,20, 0.7)), url("landscape 4.jpg") no-repeat center;
+  background: linear-gradient(133deg, rgba(52,54,66, 0.8), rgba(19,19,20, 0.7)), url("images/landscape 4.jpg") no-repeat center;
   background-size: cover;
 
 }
@@ -181,10 +181,9 @@ nav.remove {
 
 }
 
-main {
-  text-align: center;
-  color: black;
+section div  {
 
+    padding:1px;
 }
 
 .MyProjects {
@@ -196,5 +195,53 @@ main {
 .AboutMe {
   font-size: 18px;
   line-height: 35px;
+
+}
+
+h2 {
+  text-align: center;
+
+}
+
+p {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  color: #404040;
+  padding: 0px 70px 0px 70px;
+
+}
+
+.section1 {
+  background-color: #d4d4d4;
+  padding-bottom: 30px;
+
+}
+
+.section2 {
+  background-color: #ebebeb;
+  padding-bottom: 30px;
+
+}
+
+.University {
+  padding-top: 25px;
+  border-top: 3px solid white;
+
+}
+
+.University img {
+  width: 160px;
+  height: 207px;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+
+}
+
+.UniText {
+  display: block;
+  text-align: center;
+  line-height: 10px;
 
 }
