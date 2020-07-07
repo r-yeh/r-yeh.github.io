@@ -256,7 +256,7 @@ p {
 }
 
 .entryOne {
-  background: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.30)), url(images/website-cover2.png);
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(images/website-cover2.png);
   background-position: center;
   background-size: cover;
 }
