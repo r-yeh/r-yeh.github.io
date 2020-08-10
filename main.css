@@ -262,12 +262,16 @@ p {
 }
 
 .entryTwo {
-  background: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.30)), url(images/black-screen.png);
+  background: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.30)), url(images/black-screen.png); /*When future projects are made, replace url tag*/
+  background-position: center;
+  background-size: cover;
 
 }
 
 .entryThree {
-  background: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.30)), url(images/black-screen.png);
+  background: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.30)), url(images/black-screen.png); /*When future projects are made, replace url tag*/
+  background-position: center;
+  background-size: cover;
 
 }
 
@@ -314,6 +318,6 @@ p {
 .UniText {
   display: block;
   text-align: center;
-  line-height: 10px;
+  line-height: 18px;
 
 }
