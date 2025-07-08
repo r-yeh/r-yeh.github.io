@@ -1,128 +1,13 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <link rel="icon" href="images/SiteImage.png">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Ryan Yeh's Website</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
   </head>
-
   <body>
-
-    <header>
-
-      <div id="home" class="head">
-        <div class="headText">
-          <h1><span>RYAN YEH</span></h1>
-          <span class="sub">Software Engineering Graduate from McMaster University</span>
-          <a class="contact" href="mailto:r.yeh2008@gmail.com">EMAIL ME</a>
-        </div>
-      </div>
-
-      <nav>
-        <div class="navBar" id="mynavBar">
-              <a href="#home" class="homeHighlight"><span class="homeBorder">R Y</span></a>
-              <a href="#projectSection" class="projectHighlight"><span class="projectButton">Projects</span></a>
-              <a href="#aboutSection" class="aboutHighlight"><span class="aboutButton">About Me</span></a>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-        </div>
-      </nav>
-
-    </header>
-
-    <main>
-      <section id="projectSection" class="section1">
-        <div  id="projects" class="MyProjects">
-          <br>
-          <br>
-          <h2>My Projects</h2>
-
-          <div class="projectList">
-            <ul class="projectGrid">
-              <a href="https://github.com/r-yeh/r-yeh.github.io" target="_blank">
-              <li>
-                <div class="projectEntry entryOne">
-                  <div class="description">
-                      <h3>Personal Website</h3>
-                      <p>A personal project undertaken with the goal of learning HTML and CSS.</p>
-                  </div>
-                </div>
-              </a>
-              </li>
-              <a href="https://github.com/r-yeh/teachAI" target="_blank">
-              <li>
-                <div class="projectEntry entryTwo">
-                  <div class="description">
-                    <h3>TeachAI</h3> <!--Replace text here with future projects and add link tag before list entry-->
-                    <p>A web application created for Deltahacks utilizing OpenAI's Davinci 003 text model.</p>
-                  </div>
-                </div>
-              </li>
-              </a>
-                <li>
-                  <div class="projectEntry entryThree">
-                    <div class="description">
-                      <h3>Future Project</h3> <!--Replace text here with future projects and add link tag before list entry-->
-                      <p>When future projects are made, they will go here.</p>
-                    </div>
-                  </div>
-                </li>
-
-              </ul>
-            </div>
-
-
-        </div>
-      </section>
-
-      <section id="aboutSection" class="section2">
-        <div id="about" class="AboutMe">
-          <br>
-          <br>
-          <h2>About Me</h2>
-          <p>I'm a recent Software Engineering graduate from McMaster University. I greatly enjoy programming and technology, and am always looking for ways to learn more and expand my repetoire. I also find great satisfaction in problem solving and creating, so Software Engineering was my ideal specialization.</p>
-
-          <div class="University">
-            <img src="images/mcmaster-logo.png">
-            <div class="UniText">
-              <h3>McMaster University</h3>
-              <p>2019 - 2025</p>
-              <p>Bachelors of Software Engineering</p>
-
-            </div>
-          </div>
-
-      </section>
-    </main>
-
-    <script type="text/javascript">
-      $(window).on("scroll", function() {
-        if($(window).scrollTop()) {
-
-       		$('nav').addClass('show');
-          $('nav').removeClass('remove');
-
-        } else {
-
-          $('nav').removeClass('show');
-          $('nav').addClass('remove');
-
-       	};
-      });
-
-      function myFunction() {
-        var x = document.getElementById("mynavBar");
-        if (x.className === "navBar") {
-          x.className += " responsive";
-        } else {
-          x.className = "navBar";
-        }
-      }
-
-    </script>
-
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
-
 </html>
