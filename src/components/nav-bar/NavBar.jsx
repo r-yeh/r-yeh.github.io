@@ -4,7 +4,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Link } from 'react-router-dom';
-import Container from "@mui/material/Container";
+import '../../styles/NavBar.css'
 
 
 const pages = ['Projects', 'About'];
@@ -12,7 +12,7 @@ const pages = ['Projects', 'About'];
 function NavBar() {
     return (
         <AppBar position="fixed" elevation={0}>
-            <Container maxWidth="xl">
+            <div className='nav-bar'>
                 <Toolbar disableGutters>
                     <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
                         Ryan Yeh
@@ -21,7 +21,7 @@ function NavBar() {
                     <Button color="inherit" component={Link} to="/projects">Projects</Button>
                     <Button color="inherit" component={Link} to="/about">About</Button>
                 </Toolbar>
-            </Container>
+            </div>
         </AppBar>
     )
 }
