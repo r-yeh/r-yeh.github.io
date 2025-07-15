@@ -23,6 +23,10 @@ const theme = createTheme({
             fontFamily: 'Segoe UI',
             fontSize: '2rem',
         },
+        h6: {
+            fontFamily: 'Segoe UI',
+            fontSize: '1.5rem',
+        },
         p: {
             fontFamily: 'Segoe UI',
             fontSize: '1.3rem',
