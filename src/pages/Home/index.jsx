@@ -11,7 +11,7 @@ const Home = () => {
       backgroundRepeat: 'no-repeat',
       height: '100vh',
       width: '100vw',
-      backgroundColor: 'black'
+      backgroundColor: 'black',
   }
 
   return (
