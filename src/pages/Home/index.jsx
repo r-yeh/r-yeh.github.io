@@ -1,7 +1,8 @@
 import React from 'react';
+import Typography from "@mui/material/Typography";
+
 import '../../styles/Home.css';
 import background from '../../assets/images/landscape 4.jpg';
-import Typography from "@mui/material/Typography";
 
 const Home = () => {
   const pageStyle = {

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/Projects.css'
+
 import Typography from "@mui/material/Typography";
 
 const Projects = () => {
