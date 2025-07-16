@@ -20,7 +20,7 @@ const theme = createTheme({
         fontFamily: 'Segoe UI',
         h1: {
             fontFamily: 'Segoe UI',
-            fontSize: '4rem',
+            fontSize: '4.5rem',
         },
         h2: {
             fontFamily: 'Segoe UI',
