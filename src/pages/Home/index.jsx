@@ -27,11 +27,11 @@ const Home = () => {
                 <Typography variant="h2">Hi I'm
                     <Typography variant="h1" sx={{color: "secondary.light", fontWeight: "bold"}}>Ryan Yeh</Typography>
                 </Typography>
-                <Typography variant="h2">I'm a
+                <Typography variant="h2">I do
                     <Typography variant="h2" sx={{color: "tertiary.main"}}>
                         <Typewriter
                             options={{
-                                strings: ['Software Developer', 'QA Tester', 'Lifelong Learner'],
+                                strings: ['Software Development', 'QA Testing', 'Constant Learning'],
                                 autoStart: true,
                                 loop: true,
                                 loopCount: Infinity,
@@ -41,7 +41,7 @@ const Home = () => {
                         />
                     </Typography>
                 </Typography>
-                <Button sx={{marginTop: "5rem"}}
+                <Button sx={{marginTop: "12%"}}
                         variant="contained"
                         color="secondary"
                         size="large"
