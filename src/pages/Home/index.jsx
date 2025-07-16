@@ -1,5 +1,6 @@
 import React from 'react';
 import Typography from "@mui/material/Typography";
+import Typewriter from "typewriter-effect";
 
 import '../../styles/Home.css';
 import background from '../../assets/images/background_pattern_2.jpg';
@@ -18,8 +19,23 @@ const Home = () => {
   return (
       <div style={pageStyle}>
         <div className='text'>
-            <Typography variant="h1">Home Page</Typography>
-            <Typography variant="p">Test Text</Typography>
+            <Typography variant="h2">Hi I'm
+                <Typography variant="h1" sx={{color: "secondary.light", fontWeight: "bold"}}>Ryan Yeh</Typography>
+            </Typography>
+            <Typography variant="h2">I'm a
+                <Typography variant="h2" sx={{color: "tertiary.main"}}>
+                    <Typewriter
+                        options={{
+                            strings: ['Software Developer', 'QA Tester', 'Lifelong Learner'],
+                            autoStart: true,
+                            loop: true,
+                            loopCount: Infinity,
+                            deleteSpeed: "natural",
+                            pauseFor: 1000,
+                        }}
+                    />
+                </Typography>
+            </Typography>
         </div>
       </div>
   );
