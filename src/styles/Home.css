@@ -1,13 +1,9 @@
-.container {
+.text {
     max-width: 80vh;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.container > * {
-    margin-bottom: 0.5rem; /* Adds 1.5rem space below each child element */
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 8rem;
 }

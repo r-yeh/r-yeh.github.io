@@ -2,11 +2,11 @@ import React from 'react';
 import Typography from "@mui/material/Typography";
 
 import '../../styles/Home.css';
-import background from '../../assets/images/landscape 4.jpg';
+import background from '../../assets/images/background_pattern_2.jpg';
 
 const Home = () => {
   const pageStyle = {
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(${background})`,
+      backgroundImage: `url(${background})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
       <div style={pageStyle}>
-        <div className='container'>
+        <div className='text'>
             <Typography variant="h1">Home Page</Typography>
             <Typography variant="p">Test Text</Typography>
         </div>
