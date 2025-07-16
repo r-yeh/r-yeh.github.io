@@ -41,7 +41,7 @@ const Home = () => {
                         />
                     </Typography>
                 </Typography>
-                <Button sx={{marginTop: "7rem"}}
+                <Button sx={{marginTop: "5rem"}}
                         variant="contained"
                         color="secondary"
                         size="large"
@@ -50,8 +50,10 @@ const Home = () => {
                     Download Resume
                 </Button>
             </div>
-            <IconButton children={<GitHubIcon/>} size="large" color="tertiary"/>
-            <IconButton children={<LinkedInIcon/>} size="large" color="tertiary"/>
+            <div className='icons'>
+                <IconButton children={<GitHubIcon/>} size="large" color="tertiary"/>
+                <IconButton children={<LinkedInIcon/>} size="large" color="tertiary"/>
+            </div>
         </div>
     );
 };
