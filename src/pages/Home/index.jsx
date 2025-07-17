@@ -9,21 +9,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Typewriter from "typewriter-effect";
 
 import '../../styles/Home.css';
-import background from '../../assets/images/background_pattern_2.jpg';
 import resume from '../../assets/files/resume.pdf';
 import { github_url, linkedin_url } from "../../constants/index.js";
 
 const Home = () => {
-    const pageStyle = {
-        backgroundImage: `url(${background})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        height: '100vh',
-        width: '100vw',
-        backgroundColor: 'black',
-    }
-
     const onResumeDownload = () => {
         const link = document.createElement('a');
         link.href = resume;
@@ -32,7 +21,7 @@ const Home = () => {
     }
 
     return (
-        <div style={pageStyle}>
+        <div className="page">
             <div className='elements'>
                 <Typography variant="h2">Hi I'm
                     <Typography variant="h1" sx={{color: "secondary.light", fontWeight: "bold"}}>Ryan Yeh</Typography>
