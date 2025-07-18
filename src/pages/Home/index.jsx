@@ -7,6 +7,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Typewriter from "typewriter-effect";
+import { motion } from "motion/react"
 
 import '../../styles/Home.css';
 import resume from '../../assets/files/resume.pdf';
@@ -49,6 +50,9 @@ const Home = () => {
                         color="secondary"
                         size="large"
                         startIcon={<DownloadIcon/>}
+                        component={motion.button}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
                         onClick={onResumeDownload}
                 >
                     Download Resume
@@ -56,10 +60,24 @@ const Home = () => {
             </div>
             <div className='icons'>
                 <Link target="_blank" rel="noopener noreferrer" href={github_url}>
-                    <IconButton children={<GitHubIcon/>} size="large" color="tertiary"/>
+                    <IconButton
+                        children={<GitHubIcon/>}
+                        size="large"
+                        color="tertiary"
+                        component={motion.button}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    />
                 </Link>
                 <Link target="_blank" rel="noopener noreferrer" href={linkedin_url}>
-                    <IconButton children={<LinkedInIcon/>} size="large" color="tertiary"/>
+                    <IconButton
+                        children={<LinkedInIcon/>}
+                        size="large"
+                        color="tertiary"
+                        component={motion.button}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    />
                 </Link>
             </div>
         </div>
