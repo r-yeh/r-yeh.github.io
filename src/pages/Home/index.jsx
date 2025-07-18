@@ -40,7 +40,11 @@ const Home = () => {
                         />
                     </Typography>
                 </Typography>
-                <Button sx={{marginTop: "12%"}}
+                <Typography variant="p" sx={{marginTop: "5%"}}>
+                    Welcome to my portfolio! I am a recent Software Engineering graduate from McMaster University
+                    currently searching for new opportunities to grow my skills and develop my career.
+                </Typography>
+                <Button sx={{marginTop: "5%"}}
                         variant="contained"
                         color="secondary"
                         size="large"
