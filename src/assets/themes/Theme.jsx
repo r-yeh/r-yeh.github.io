@@ -34,7 +34,7 @@ const theme = createTheme({
             fontFamily: 'Segoe UI',
             fontSize: '1.5rem',
         },
-        p: {
+        body1: {
             fontFamily: 'Segoe UI',
             fontSize: '1.3rem',
         }
