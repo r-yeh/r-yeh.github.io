@@ -1,0 +1,9 @@
+.paper {
+    position: absolute;
+    top: calc(50% + 32px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 80%;
+    padding: 1%
+}
