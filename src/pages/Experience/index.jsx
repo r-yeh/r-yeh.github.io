@@ -1,8 +1,10 @@
 import React from 'react';
 
+import '../../styles/common.css'
+
 const Experience = () => {
     return (
-        <div>
+        <div className="page">
             <h1>Experience Page</h1>
         </div>
     )
