@@ -1,16 +1,17 @@
 import React from 'react';
 import Tab from '@mui/material/Tab';
 
-const CustomTab = ({label, ...otherProps}) => {
+const CustomTab = ({label, ...props}) => {
     return (
         <Tab sx={{
-            color: "white",
+            color: 'white',
+            textTransform: 'none',
             '&.Mui-selected': {
                 backgroundColor: 'tertiary.main',
                 color: 'black',
                 fontWeight: 'bold'
             }
-        }} label={label} {...otherProps} />
+        }} label={label} {...props} />
     );
 }
 

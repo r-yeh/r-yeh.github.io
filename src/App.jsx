@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Experience from "./pages/Experience/index.jsx";
 import Projects from './pages/Projects';
 import About from './pages/About';
-import NavBar from './components/nav-bar/NavBar';
+import NavBar from './components/nav-bar/index.jsx';
 
 function App() {
     return (
