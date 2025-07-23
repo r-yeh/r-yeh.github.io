@@ -13,6 +13,9 @@ const CustomTab = (props) => {
                     backgroundColor: 'primary.main',
                     color: 'tertiary.main',
                     fontWeight: 'bold'
+                },
+                '&:focus': {
+                    outline: 'none',
                 }
             }}
             label={label}
