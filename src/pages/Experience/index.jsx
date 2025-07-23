@@ -18,7 +18,7 @@ const Experience = () => {
     return (
         <div className="page">
             <Paper className="paper" sx={{backgroundColor: "background.paper"}} elevation={1}>
-                <Box sx={{width: '100%', bgcolor: 'background.paper'}}>
+                <Box sx={{width: '100%', borderBottom: 1, borderColor: 'divider', bgcolor: 'background.paper'}}>
                     <Tabs
                         value={value}
                         onChange={handleChange}
