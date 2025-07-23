@@ -2,7 +2,7 @@ import React from 'react';
 import Tab from '@mui/material/Tab';
 
 const CustomTab = (props) => {
-    const {label, ...other} = props
+    const {label, ...other} = props;
 
     return (
         <Tab
@@ -10,8 +10,8 @@ const CustomTab = (props) => {
                 color: 'white',
                 textTransform: 'none',
                 '&.Mui-selected': {
-                    backgroundColor: 'tertiary.main',
-                    color: 'black',
+                    backgroundColor: 'primary.main',
+                    color: 'tertiary.main',
                     fontWeight: 'bold'
                 }
             }}
