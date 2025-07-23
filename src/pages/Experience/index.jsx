@@ -1,6 +1,5 @@
 import React from 'react';
 import Paper from '@mui/material/Paper';
-import Typography from "@mui/material/Typography";
 import Tabs from '@mui/material/Tabs';
 import Box from '@mui/material/Box';
 
@@ -8,6 +7,7 @@ import '../../styles/common.css'
 import '../../styles/Experience.css'
 import CustomTab from '../../components/custom-tab/index.jsx';
 import ExperiencePanel from '../../components/experience-panel/index.jsx';
+import {opg_experience, ministry_experience, sentry_health_experience} from "../../constants/index.js";
 
 const Experience = () => {
     const [value, setValue] = React.useState(0);
@@ -36,15 +36,27 @@ const Experience = () => {
                         <CustomTab label="Sentry Health"/>
                     </Tabs>
                 </Box>
-                <ExperiencePanel value={value} index={0}>
-                    <Typography variant='body1'>Ontario Power Generation</Typography>
-                </ExperiencePanel>
-                <ExperiencePanel value={value} index={1}>
-                    <Typography variant='body1'>Ontario Ministry of Health</Typography>
-                </ExperiencePanel>
-                <ExperiencePanel value={value} index={2}>
-                    <Typography variant='body1'>Sentry Health</Typography>
-                </ExperiencePanel>
+                <ExperiencePanel
+                    title="Data & Software Development Intern"
+                    duration="May 2024 - August 2024"
+                    points={opg_experience}
+                    value={value}
+                    index={0}
+                />
+                <ExperiencePanel
+                    title="Software Developer Co-op Student"
+                    duration="May 2023 - August 2023"
+                    points={ministry_experience}
+                    value={value}
+                    index={1}
+                />
+                <ExperiencePanel
+                    title="Software Engineer & QA Intern"
+                    duration="May 2021 - August 2022"
+                    points={sentry_health_experience}
+                    value={value}
+                    index={2}
+                />
             </Paper>
         </div>
     );

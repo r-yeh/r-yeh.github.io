@@ -7,3 +7,15 @@
 .experience-panel.hidden {
     display: none;
 }
+
+.experience-list {
+    color: white;
+    margin-top: 3rem;
+}
+
+.experience-list-item {
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    word-break: break-word;
+}
