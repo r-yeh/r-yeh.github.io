@@ -2,6 +2,7 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    padding: 1rem;
 }
 
 .experience-panel.hidden {

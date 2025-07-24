@@ -2,12 +2,14 @@ import React from 'react';
 import Paper from '@mui/material/Paper';
 import Tabs from '@mui/material/Tabs';
 import Box from '@mui/material/Box';
+import {motion} from "motion/react";
 
 import '../../styles/common.css'
 import '../../styles/Experience.css'
 import CustomTab from '../../components/custom-tab/index.jsx';
 import ExperiencePanel from '../../components/experience-panel/index.jsx';
 import {opg_experience, ministry_experience, sentry_health_experience} from "../../constants/index.js";
+import {stagger} from "motion";
 
 const Experience = () => {
     const [value, setValue] = React.useState(0);
@@ -16,11 +18,32 @@ const Experience = () => {
         setValue(newValue);
     };
 
+    const panelVariants = {
+        hidden: {
+            opacity: 0,
+        },
+        show: {
+            opacity: 1,
+            transition: {
+                duration: 0.8,
+            },
+        },
+    };
+
     return (
         <div className="page">
             <Paper
                 className="paper"
-                sx={{display: 'flex', flexDirection: 'column', backgroundColor: "primary.main"}}
+                sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    backgroundColor: "rgba(29, 26, 47, 0.75)",
+                    backdropFilter: 'blur(16px)'
+                }}
+                component={motion.div}
+                variants={panelVariants}
+                initial="hidden"
+                animate="show"
                 elevation={1}
             >
                 <Box sx={{width: '100%', borderBottom: 1, borderColor: 'divider', bgcolor: 'primary.main'}}>
