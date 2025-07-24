@@ -2,6 +2,7 @@ import React from 'react';
 import Paper from '@mui/material/Paper';
 import Tabs from '@mui/material/Tabs';
 import Box from '@mui/material/Box';
+import {alpha, useTheme} from '@mui/material/styles';
 import {motion} from "motion/react";
 
 import '../../styles/common.css'
@@ -9,7 +10,6 @@ import '../../styles/Experience.css'
 import CustomTab from '../../components/custom-tab/index.jsx';
 import ExperiencePanel from '../../components/experience-panel/index.jsx';
 import {opg_experience, ministry_experience, sentry_health_experience} from "../../constants/index.js";
-import {stagger} from "motion";
 
 const Experience = () => {
     const [value, setValue] = React.useState(0);
@@ -17,6 +17,8 @@ const Experience = () => {
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
+
+    const theme = useTheme();
 
     const panelVariants = {
         hidden: {
@@ -37,7 +39,7 @@ const Experience = () => {
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
-                    backgroundColor: "rgba(29, 26, 47, 0.75)",
+                    backgroundColor: alpha(theme.palette.primary.main, 0.75),
                     backdropFilter: 'blur(16px)'
                 }}
                 component={motion.div}
