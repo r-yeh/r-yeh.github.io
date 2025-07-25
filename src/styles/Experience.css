@@ -5,4 +5,5 @@
     transform: translate(-50%, -50%);
     width: 97%;
     height: 85%;
+    overflow: hidden;
 }
