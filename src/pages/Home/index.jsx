@@ -43,11 +43,11 @@ const Home = () => {
                 <Typography variant="h2">Hi I'm
                     <Typography variant="h1" sx={{color: "secondary.light", fontWeight: "bold"}}>Ryan Yeh</Typography>
                 </Typography>
-                <Typography variant="h2">I enjoy
+                <Typography variant="h2">I'm interested in
                     <Typography variant="h2" sx={{color: "tertiary.main"}}>
                         <Typewriter
                             options={{
-                                strings: ['Software Development', 'QA Testing', 'Continuous Learning'],
+                                strings: ['Software Development', 'QA Testing', 'Learning New Skills'],
                                 autoStart: true,
                                 loop: true,
                                 loopCount: Infinity,
