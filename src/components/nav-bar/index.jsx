@@ -23,6 +23,7 @@ function NavBar() {
                         Ryan Yeh
                     </Typography>
                     <Button sx={buttonStyle} component={Link} to="/">Home</Button>
+                    <Button sx={buttonStyle} color="inherit" component={Link} to="/experience">Experience</Button>
                     <Button sx={buttonStyle} color="inherit" component={Link} to="/projects">Projects</Button>
                     <Button sx={buttonStyle} color="inherit" component={Link} to="/about">About</Button>
                 </Toolbar>

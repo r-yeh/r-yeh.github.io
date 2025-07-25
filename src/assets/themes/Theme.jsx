@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material/styles";
+import {createTheme} from "@mui/material/styles";
 
 const theme = createTheme({
     palette: {
@@ -13,32 +13,33 @@ const theme = createTheme({
             main: '#8BD450'
         },
         background: {
-            default: '#333333'
+            default: '#333333',
+            paper: '#333333'
         }
     },
     typography: {
         fontFamily: 'Segoe UI',
+        allVariants: {
+            color: 'white'
+        },
         h1: {
-            fontFamily: 'Segoe UI',
             fontSize: '4.5rem',
         },
         h2: {
-            fontFamily: 'Segoe UI',
             fontSize: '3rem',
         },
         h3: {
-            fontFamily: 'Segoe UI',
             fontSize: '2rem',
         },
         h6: {
-            fontFamily: 'Segoe UI',
             fontSize: '1.5rem',
         },
         body1: {
-            fontFamily: 'Segoe UI',
             fontSize: '1.3rem',
+        },
+        body2: {
+            fontSize: '1.1rem',
         }
-
     }
 });
 
