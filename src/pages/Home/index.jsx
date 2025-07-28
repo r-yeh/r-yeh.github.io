@@ -41,7 +41,7 @@ const Home = () => {
         <div className="page">
             <div className='elements'>
                 <Typography variant="h2">Hi I'm
-                    <Typography variant="h1" sx={{color: "secondary.light", fontWeight: "bold"}}>Ryan Yeh</Typography>
+                    <Typography variant="h1" sx={{color: "secondary.light"}}>Ryan Yeh</Typography>
                 </Typography>
                 <Typography variant="h2">I'm interested in
                     <Typography variant="h2" sx={{color: "tertiary.main"}}>
