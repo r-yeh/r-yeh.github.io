@@ -18,27 +18,36 @@ const theme = createTheme({
         }
     },
     typography: {
-        fontFamily: 'Segoe UI',
         allVariants: {
             color: 'white'
         },
         h1: {
             fontSize: '4.5rem',
+            fontWeight: '600',
+            fontFamily: 'Work Sans, sans-serif',
         },
         h2: {
             fontSize: '3rem',
+            fontWeight: '400',
+            fontFamily: 'Work Sans, sans-serif',
         },
         h3: {
             fontSize: '2rem',
+            fontWeight: '600',
+            fontFamily: 'Work Sans, sans-serif',
         },
         h6: {
             fontSize: '1.5rem',
+            fontWeight: '400',
+            fontFamily: 'Work Sans, sans-serif',
         },
         body1: {
             fontSize: '1.3rem',
+            fontFamily: 'Roboto, sans-serif'
         },
         body2: {
             fontSize: '1.1rem',
+            fontFamily: 'Roboto, sans-serif'
         }
     }
 });
