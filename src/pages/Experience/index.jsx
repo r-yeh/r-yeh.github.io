@@ -5,7 +5,6 @@ import Box from '@mui/material/Box';
 import {alpha, useTheme} from '@mui/material/styles';
 import {motion} from "motion/react";
 
-import '../../styles/common.css'
 import '../../styles/Experience.css'
 import CustomTab from '../../components/custom-tab/index.jsx';
 import ExperiencePanel from '../../components/experience-panel/index.jsx';
@@ -33,7 +32,7 @@ const Experience = () => {
     };
 
     return (
-        <div className="page">
+        <div>
             <Paper
                 className="paper"
                 sx={{

@@ -10,7 +10,6 @@ import Typewriter from "typewriter-effect";
 import {stagger} from "motion";
 import {motion} from "motion/react"
 
-import '../../styles/common.css';
 import '../../styles/Home.css';
 import resume from '../../assets/files/resume.pdf';
 import {github_url, linkedin_url} from "../../constants/index.js";
@@ -38,7 +37,7 @@ const Home = () => {
     }
 
     return (
-        <div className="page">
+        <div>
             <div className='elements'>
                 <Typography variant="h2">Hi I'm
                     <Typography variant="h1" sx={{color: "secondary.light"}}>Ryan Yeh</Typography>
