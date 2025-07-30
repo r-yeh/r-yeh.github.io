@@ -1,22 +1,25 @@
 import React from 'react';
 import Typography from "@mui/material/Typography";
+import Paper from "@mui/material/Paper";
+import Grid from "@mui/material/Grid";
 
 import '../../styles/About.css'
 
 const About = () => {
-    const pageStyle = {
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        height: '100vh',
-        width: '100vw'
-    }
-
     return (
-        <div style={pageStyle}>
-            <div className='container'>
-                <Typography variant="h1">About Page</Typography>
-            </div>
+        <div className='about-page'>
+            <Grid container>
+                <Grid size={{xs: 12, md: 3}}>
+                    <Paper>
+                        <Typography variant="h1">Image here</Typography>
+                    </Paper>
+                </Grid>
+                <Grid size={{xs:12, md: 9}}>
+                    <Paper>
+                        <Typography variant="h1">Description here</Typography>
+                    </Paper>
+                </Grid>
+            </Grid>
         </div>
     )
 }
