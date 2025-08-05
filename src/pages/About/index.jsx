@@ -2,11 +2,15 @@ import React from 'react';
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
+import {alpha, useTheme} from '@mui/material/styles';
 
 import '../../styles/About.css'
 import AboutPicture from '../../assets/images/about-picture.jpg';
+import Box from "@mui/material/Box";
 
 const About = () => {
+    const theme = useTheme();
+
     return (
         <div className='about-page'>
             <Grid container spacing={2}>
@@ -26,16 +30,29 @@ const About = () => {
                     <Paper sx={{
                         display: 'flex',
                         flexDirection: 'column',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        height: '84vh'
+                        height: '100%',
+                        backgroundColor: alpha(theme.palette.primary.main, 0.75),
+                        backdropFilter: 'blur(16px)'
                     }}>
-                        <Typography variant="h2">Description here</Typography>
+                        <Box sx={{
+                            width: '100%',
+                            borderBottom: 1,
+                            borderColor: 'divider',
+                            bgcolor: 'primary.main',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            padding: '0.5rem'
+                        }}>
+                            <Typography variant="h3">About Me</Typography>
+                        </Box>
+                        <div style={{padding: '1rem'}}>
+                            <Typography variant="body1">Description here</Typography>
+                        </div>
                     </Paper>
                 </Grid>
             </Grid>
         </div>
-    )
+    );
 }
 
 export default About;
