@@ -13,12 +13,12 @@ const About = () => {
 
     return (
         <div className='about-page'>
-            <Grid container spacing={2}>
+            <Grid container spacing={2}  sx={{height: '100%'}}>
                 <Grid size={{xs: 12, md: 4}}>
                     <div style={{
                         display: 'flex',
                         width: '100%',
-                        height: '84vh',
+                        height: '85vh',
                         justifyContent: 'center',
                         alignItems: 'center'
                     }}>
