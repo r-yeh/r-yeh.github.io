@@ -48,7 +48,7 @@ const ExperiencePanel = (props) => {
             aria-labelledby={`experience-panel-${index}`}
             {...other}
         >
-            <Box sx={{p: 3, flexGrow: 1, overflowY: 'auto', maxHeight: 'calc(100vh - 45%)'}}>
+            <Box sx={{padding: "24px", flexGrow: 1, overflowY: 'auto', maxHeight: 'calc(100vh - 45%)'}}>
                 <Typography variant='h3'>{title}</Typography>
                 <Typography sx={{marginTop: '1rem'}} variant='h6'>{duration}</Typography>
                 <motion.ul

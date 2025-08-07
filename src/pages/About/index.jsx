@@ -13,7 +13,7 @@ const About = () => {
 
     return (
         <div className='about-page'>
-            <Grid container spacing={2}  sx={{height: '100%'}}>
+            <Grid container spacing={2} sx={{height: '100%'}}>
                 <Grid size={{xs: 12, md: 4}}>
                     <div style={{
                         display: 'flex',
@@ -45,8 +45,36 @@ const About = () => {
                         }}>
                             <Typography variant="h3">About Me</Typography>
                         </Box>
-                        <div style={{padding: '1rem'}}>
-                            <Typography variant="body1">Description here</Typography>
+                        <div style={{
+                            padding: '1rem',
+                            flexGrow: 1,
+                            wordBreak: 'break-word',
+                            overflowY: 'auto',
+                            maxHeight: 'calc(100vh - 33%)',
+                        }}>
+                            <Typography variant="body1">
+                                I'm a recent Software Engineering graduate from McMaster University with a strong
+                                interest in software development and testing. I'm actively seeking opportunities where I
+                                can grow as an engineer, expand my skill set, and contribute to impactful projects.
+                                Driven by a passion for continuous learning, I strive to improve every day and remain
+                                open to exploring new areas in tech.
+                            </Typography>
+                            <Typography variant="body1">
+                                Some languages and tools I've used in the past include:
+                                <ul style={{columnCount: 2, columnGap: '0.5rem'}}>
+                                    <li>Python</li>
+                                    <li>JavaScript</li>
+                                    <li>React</li>
+                                    <li>Postman</li>
+                                    <li>HTML/CSS</li>
+                                    <li>Java</li>
+                                    <li>Dart</li>
+                                </ul>
+                            </Typography>
+                            <Typography variant="body1">
+                                Outside of work, I’m passionate about physical training, playing music, and unwinding
+                                with games — allowing me to stay balanced and motivated.
+                            </Typography>
                         </div>
                     </Paper>
                 </Grid>
