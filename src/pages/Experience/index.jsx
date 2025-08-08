@@ -5,10 +5,10 @@ import Box from '@mui/material/Box';
 import {alpha, useTheme} from '@mui/material/styles';
 import {motion} from "motion/react";
 
-import '../../styles/common.css'
 import '../../styles/Experience.css'
 import CustomTab from '../../components/custom-tab/index.jsx';
 import ExperiencePanel from '../../components/experience-panel/index.jsx';
+import {pageVariants} from "../../assets/animation/animation.js";
 import {opg_experience, ministry_experience, sentry_health_experience} from "../../constants/index.js";
 
 const Experience = () => {
@@ -20,20 +20,8 @@ const Experience = () => {
 
     const theme = useTheme();
 
-    const panelVariants = {
-        hidden: {
-            opacity: 0,
-        },
-        show: {
-            opacity: 1,
-            transition: {
-                duration: 0.8,
-            },
-        },
-    };
-
     return (
-        <div className="page">
+        <div>
             <Paper
                 className="paper"
                 sx={{
@@ -43,7 +31,7 @@ const Experience = () => {
                     backdropFilter: 'blur(16px)'
                 }}
                 component={motion.div}
-                variants={panelVariants}
+                variants={pageVariants}
                 initial="hidden"
                 animate="show"
                 elevation={1}
@@ -82,7 +70,8 @@ const Experience = () => {
                     value={value}
                     index={2}
                 />
-            </Paper>
+            </Paper
+                >
         </div>
     );
 }

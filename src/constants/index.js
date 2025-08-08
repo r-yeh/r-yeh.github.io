@@ -24,3 +24,5 @@ export const sentry_health_experience = [
     "Automated file uploads to Firestore by creating a Node-RED workflow that monitors and processes new files, eliminating manual administrative tasks",
     "Used Jira to track bugs and manage development tasks, improving team visibility and ensuring faster issue resolution during sprints"
 ]
+
+export const tools = ['Python', 'JavaScript', 'React', 'Postman', 'HTML/CSS', 'Java', 'Dart'];
