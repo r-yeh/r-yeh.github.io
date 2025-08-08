@@ -3,17 +3,28 @@ import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import {alpha, useTheme} from '@mui/material/styles';
+import {motion} from "motion/react";
 
 import '../../styles/About.css'
 import AboutPicture from '../../assets/images/about-picture.jpg';
 import Box from "@mui/material/Box";
+import {tools} from "../../constants/index.js";
+import {pageVariants, listVariants, listItemVariants} from "../../assets/animation/animation.js";
 
 const About = () => {
     const theme = useTheme();
 
     return (
         <div className='about-page'>
-            <Grid container spacing={2} sx={{height: '100%'}}>
+            <Grid
+                container
+                spacing={2}
+                sx={{height: '100%'}}
+                component={motion.div}
+                variants={pageVariants}
+                initial="hidden"
+                animate="show"
+            >
                 <Grid size={{xs: 12, md: 4}}>
                     <div style={{
                         display: 'flex',
@@ -49,25 +60,31 @@ const About = () => {
                             <div className='about-description-content'>
                                 <Typography variant="body1">
                                     I'm a recent Software Engineering graduate from McMaster University with a strong
-                                    interest in software development and testing. I'm actively seeking opportunities where I
+                                    interest in software development and testing. I'm actively seeking opportunities
+                                    where I
                                     can grow as an engineer, expand my skill set, and contribute to impactful projects.
-                                    Driven by a passion for continuous learning, I strive to improve every day and remain
+                                    Driven by a passion for continuous learning, I strive to improve every day and
+                                    remain
                                     open to exploring new areas in tech.
                                 </Typography>
                                 <Typography variant="body1">
                                     Some languages and tools I've used in the past include:
-                                    <ul style={{columnCount: 2, columnGap: '0.5rem'}}>
-                                        <li>Python</li>
-                                        <li>JavaScript</li>
-                                        <li>React</li>
-                                        <li>Postman</li>
-                                        <li>HTML/CSS</li>
-                                        <li>Java</li>
-                                        <li>Dart</li>
-                                    </ul>
+                                    <motion.ul
+                                        style={{columnCount: 2, columnGap: '0.5rem'}}
+                                        variants={listVariants}
+                                        initial="hidden"
+                                        animate="show"
+                                    >
+                                        {tools.map((tool, index) => (
+                                            <motion.li key={index} variants={listItemVariants}>
+                                                <Typography variant='body2'>{tool}</Typography>
+                                            </motion.li>
+                                        ))}
+                                    </motion.ul>
                                 </Typography>
                                 <Typography variant="body1">
-                                    Outside of work, I’m passionate about physical training, playing music, and unwinding
+                                    Outside of work, I’m passionate about physical training, playing music, and
+                                    unwinding
                                     with games — allowing me to stay balanced and focused.
                                 </Typography>
                             </div>
