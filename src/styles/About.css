@@ -5,5 +5,26 @@
     transform: translate(-50%, -50%);
     width: 97%;
     height: 85%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1rem;
+    flex: 1 1 auto;
+    min-height: 0;
+    word-break: break-word;
+    overflow-y: auto;
+}
+
+.about-description-content {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.about-description-content > *:not(:last-child) {
+    padding-bottom: 2rem;
 }
