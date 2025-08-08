@@ -20,10 +20,6 @@ const About = () => {
                 container
                 spacing={2}
                 sx={{height: '100%'}}
-                component={motion.div}
-                variants={pageVariants}
-                initial="hidden"
-                animate="show"
             >
                 <Grid size={{xs: 12, md: 4}}>
                     <div style={{
@@ -33,18 +29,32 @@ const About = () => {
                         justifyContent: 'center',
                         alignItems: 'center'
                     }}>
-                        <img style={{maxHeight: '100%', maxWidth: '100%', objectFit: 'contain', borderRadius: '8px'}}
-                             src={AboutPicture} alt='Picture of Me'/>
+                        <motion.img
+                            src={AboutPicture} alt='Picture of Me'
+                            style={{
+                                maxHeight: '100%',
+                                maxWidth: '100%',
+                                objectFit: 'contain',
+                                borderRadius: '8px'
+                            }}
+                            variants={pageVariants}
+                            initial="hidden"
+                            animate="show"/>
                     </div>
                 </Grid>
                 <Grid size={{xs: 12, md: 8}}>
-                    <Paper sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        height: '100%',
-                        backgroundColor: alpha(theme.palette.primary.main, 0.75),
-                        backdropFilter: 'blur(16px)'
-                    }}>
+                    <Paper
+                        component={motion.div}
+                        variants={pageVariants}
+                        initial="hidden"
+                        animate="show"
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            height: '100%',
+                            backgroundColor: alpha(theme.palette.primary.main, 0.75),
+                            backdropFilter: 'blur(16px)'
+                        }}>
                         <Box sx={{
                             width: '100%',
                             borderBottom: 1,
