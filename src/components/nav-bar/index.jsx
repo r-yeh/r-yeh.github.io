@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import '../../styles/NavBar.css'
 
@@ -11,7 +11,7 @@ function NavBar() {
     const buttonStyle = {
         color: 'white',
         '&:hover': {
-          color: 'secondary.light'
+            color: 'secondary.light'
         },
     }
 
