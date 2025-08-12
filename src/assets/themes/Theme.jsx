@@ -56,6 +56,7 @@ const theme = createTheme({
         },
         body3: {
             fontSize: '0.9rem',
+            color: 'white',
             fontFamily: body_font,
         }
     }
