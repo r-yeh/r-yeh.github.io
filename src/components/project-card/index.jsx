@@ -6,6 +6,7 @@ import CardActions from '@mui/material/CardActions';
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
+import Box from "@mui/material/Box";
 
 const ProjectCard = (props) => {
     const {title, image, description, url, ...other} = props;
@@ -17,14 +18,27 @@ const ProjectCard = (props) => {
                 height="140"
                 image={image}
                 alt="temp"
+                sx={{
+                    borderBottom: '1px solid',
+                    borderColor: 'divider',
+                }}
             />
-            <CardContent>
+            <CardContent sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                flexGrow: 1,
+                gap: '0.5rem',
+                paddingX: '1rem',
+                wordBreak: 'break-word',
+            }}>
                 <Typography gutterBottom variant="h6" component="div">
                     {title}
                 </Typography>
-                <Typography variant="body3">
-                    {description}
-                </Typography>
+                <Box sx={{height: '65%', overflowY: 'auto'}}>
+                    <Typography variant="body3">
+                        {description}
+                    </Typography>
+                </Box>
             </CardContent>
             <CardActions>
                 <Link target="_blank" rel="noopener noreferrer" href={url}>
