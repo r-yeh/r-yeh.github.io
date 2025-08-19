@@ -8,8 +8,9 @@ import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
 import Chip from "@mui/material/Chip";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
-// fixed image height? on hover, detailed explanation appears rather than full layout present at the start?
+// fixed image height? fixed card height so it doesnt resize on larger descriptions? on hover, detailed explanation appears rather than full layout present at the start?
 
 const ProjectCard = (props) => {
     const {title, image, description, tags, url, ...other} = props;
@@ -39,7 +40,7 @@ const ProjectCard = (props) => {
                 </Typography>
                 <Box sx={{display: 'flex', flexDirection: 'row', gap: '0.5rem'}}>
                     {tags.map((tag, index) => (
-                        <Chip sx={{color: 'tertiary.main'}} key={index} label={tag} variant="outlined" size="small"/>
+                        <Chip key={index} label={tag} variant="outlined" size="small" color="tertiary"/>
                     ))}
                 </Box>
                 <Box sx={{height: '65%', overflowY: 'auto'}}>
@@ -48,9 +49,9 @@ const ProjectCard = (props) => {
                     </Typography>
                 </Box>
             </CardContent>
-            <CardActions>
+            <CardActions sx={{display: 'flex', flexDirection: 'row', justifyContent: 'end', margin: '0.3rem'}}>
                 <Link target="_blank" rel="noopener noreferrer" href={url}>
-                    <Button size="small">
+                    <Button sx={{borderRadius: '25px'}} size="small" variant="contained" color="secondary" startIcon={<GitHubIcon/>}>
                         <Typography variant="body3">View Project</Typography>
                     </Button>
                 </Link>
