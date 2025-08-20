@@ -16,15 +16,22 @@ const ProjectCard = (props) => {
     const {title, image, description, tags, url, ...other} = props;
 
     return (
-        <Card sx={{display: 'flex', flexDirection: 'column', height: '100%', backgroundColor: 'primary.main'}}>
+        <Card sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            height: 'clamp(22rem, 50vh, 32rem)',
+            backgroundColor: 'primary.main'
+        }}>
             <CardMedia
                 component="img"
-                height="200"
                 image={image}
                 alt="temp"
                 sx={{
                     borderBottom: '1px solid',
                     borderColor: 'divider',
+                    height: "40%",
+                    width: "100%",
+                    objectFit: "cover",
                 }}
             />
             <CardContent sx={{
@@ -51,7 +58,8 @@ const ProjectCard = (props) => {
             </CardContent>
             <CardActions sx={{display: 'flex', flexDirection: 'row', justifyContent: 'end', margin: '0.3rem'}}>
                 <Link target="_blank" rel="noopener noreferrer" href={url}>
-                    <Button sx={{borderRadius: '25px'}} size="small" variant="contained" color="secondary" startIcon={<GitHubIcon/>}>
+                    <Button sx={{borderRadius: '25px'}} size="small" variant="contained" color="secondary"
+                            startIcon={<GitHubIcon/>}>
                         <Typography variant="body3">View Project</Typography>
                     </Button>
                 </Link>
