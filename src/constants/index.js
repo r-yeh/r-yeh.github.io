@@ -26,3 +26,20 @@ export const sentry_health_experience = [
 ]
 
 export const tools = ['Python', 'JavaScript', 'React', 'Postman', 'HTML/CSS', 'Java', 'Dart'];
+
+export const projects = [
+    {
+        title: 'Grocery Spending Tracker',
+        image:'https://blocks.astratic.com/img/general-img-landscape.png',
+        description: 'A mobile application designed to help users track and categorize their grocery spending via photos of receipts. It allows users to track and analyze personal spending trends and set goals, allowing them to better deal with the ever-rising cost of food.',
+        tags: ['Flutter', 'JavaScript', 'PostgreSQL', 'Git'],
+        url: 'https://github.com/grocery-spending-tracker/grocery-spending-tracker'
+    },
+    {
+        title: 'Project 2',
+        image:'https://blocks.astratic.com/img/general-img-landscape.png',
+        description: 'This is a description of the project.',
+        tags: ['React', 'JavaScript', 'HTML', 'CSS', 'Git'],
+        url: 'https://google.com'
+    }
+]

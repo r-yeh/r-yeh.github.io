@@ -29,14 +29,15 @@ const ProjectCard = (props) => {
                 sx={{
                     borderBottom: '1px solid',
                     borderColor: 'divider',
-                    height: "40%",
-                    width: "100%",
+                    height: '40%',
+                    width: '100%',
                     objectFit: "cover",
                 }}
             />
             <CardContent sx={{
                 display: 'flex',
                 flexDirection: 'column',
+                minHeight: 0, // by default, description will not shrink more than content size. minheight 0 allows content to shrink beyond this point, allowing the scrollbar to be used if needed.
                 flexGrow: 1,
                 gap: '0.8rem',
                 paddingX: '1rem',
