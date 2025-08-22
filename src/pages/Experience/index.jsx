@@ -9,7 +9,7 @@ import '../../styles/Experience.css'
 import CustomTab from '../../components/custom-tab/index.jsx';
 import ExperiencePanel from '../../components/experience-panel/index.jsx';
 import {pageVariants} from "../../assets/animation/animation.js";
-import {opg_experience, ministry_experience, sentry_health_experience} from "../../constants/index.js";
+import {companies, experience} from "../../constants/index.js";
 
 const Experience = () => {
     const [value, setValue] = React.useState(0);
@@ -44,34 +44,23 @@ const Experience = () => {
                         centered
                         aria-label="Company tabs"
                     >
-                        <CustomTab label="Ontario Power Generation"/>
-                        <CustomTab label="Ontario Ministry of Health"/>
-                        <CustomTab label="Sentry Health"/>
+                        {companies.map((company, index) => (
+                            <CustomTab key={index} label={company}/>
+                        ))}
                     </Tabs>
                 </Box>
-                <ExperiencePanel
-                    title="Data & Software Development Intern"
-                    duration="May 2024 - August 2024"
-                    points={opg_experience}
-                    value={value}
-                    index={0}
-                />
-                <ExperiencePanel
-                    title="Software Developer Co-op Student"
-                    duration="May 2023 - August 2023"
-                    points={ministry_experience}
-                    value={value}
-                    index={1}
-                />
-                <ExperiencePanel
-                    title="Software Engineer & QA Intern"
-                    duration="May 2021 - August 2022"
-                    points={sentry_health_experience}
-                    value={value}
-                    index={2}
-                />
+                {experience.map((experience, index) => (
+                    <ExperiencePanel
+                        title={experience.title}
+                        duration={experience.duration}
+                        points={experience.points}
+                        value={value}
+                        index={index}
+                        key={index}
+                    />
+                ))}
             </Paper
-                >
+            >
         </div>
     );
 }

@@ -1,13 +1,10 @@
-.container {
-    max-width: 80vh;
-    margin: 0 auto;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.container > * {
-    margin-bottom: 0.5rem;
+.project-page {
+    position: absolute;
+    top: calc(50% + 32px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 97%;
+    height: 85%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
