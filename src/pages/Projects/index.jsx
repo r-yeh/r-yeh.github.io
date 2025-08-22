@@ -1,5 +1,4 @@
 import React from 'react';
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 
 import '../../styles/Projects.css';
@@ -11,14 +10,13 @@ const Projects = () => {
         <div className='project-page'>
             <Grid spacing={2} container columns={12} sx={{height: '50%', width: '100%'}}>
                 {projects.map((project, index) => (
-                    <Grid size={{xs: 12, md: 6}}>
+                    <Grid size={{xs: 12, md: 6}} key={index}>
                         <ProjectCard
                             title={project.title}
                             image={project.image}
                             description={project.description}
                             tags={project.tags}
-                            url={project.url}
-                            key={index}/>
+                            url={project.url}/>
                     </Grid>
                 ))}
             </Grid>

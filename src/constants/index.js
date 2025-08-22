@@ -1,3 +1,6 @@
+import GrocerySpendingTracker from '../assets/images/grocery-spending-tracker.png';
+import TeachAI from '../assets/images/teach-ai.png';
+
 export const github_url = "https://github.com/r-yeh";
 
 export const linkedin_url = "https://www.linkedin.com/in/ryan-yeh-2008/";
@@ -51,16 +54,16 @@ export const tools = ['Python', 'JavaScript', 'React', 'Postman', 'HTML/CSS', 'J
 export const projects = [
     {
         title: 'Grocery Spending Tracker',
-        image:'https://blocks.astratic.com/img/general-img-landscape.png',
+        image:GrocerySpendingTracker,
         description: 'A mobile application designed to help users track and categorize their grocery spending via photos of receipts. It allows users to track and analyze personal spending trends and set goals, allowing them to better deal with the ever-rising cost of food.',
         tags: ['Flutter', 'JavaScript', 'PostgreSQL', 'Git'],
         url: 'https://github.com/grocery-spending-tracker/grocery-spending-tracker'
     },
     {
-        title: 'Project 2',
-        image:'https://blocks.astratic.com/img/general-img-landscape.png',
-        description: 'This is a description of the project.',
+        title: 'TeachAI',
+        image:TeachAI,
+        description: 'A web application designed for teachers that uses the OpenAI API to generate a step-by-step plan on how to teach others any given concept or skill.',
         tags: ['React', 'JavaScript', 'HTML', 'CSS', 'Git'],
-        url: 'https://google.com'
+        url: 'https://github.com/r-yeh/teachAI'
     }
 ];
