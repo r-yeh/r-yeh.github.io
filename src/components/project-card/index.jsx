@@ -10,18 +10,18 @@ import Box from "@mui/material/Box";
 import Chip from "@mui/material/Chip";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-// fixed image height? fixed card height so it doesnt resize on larger descriptions? on hover, detailed explanation appears rather than full layout present at the start?
-
 const ProjectCard = (props) => {
     const {title, image, description, tags, url, ...other} = props;
 
     return (
-        <Card sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            height: 'clamp(22rem, 50vh, 32rem)',
-            backgroundColor: 'primary.main'
-        }}>
+        <Card
+            sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                height: 'clamp(22rem, 50vh, 32rem)',
+                backgroundColor: 'primary.main'
+            }}
+        >
             <CardMedia
                 component="img"
                 image={image}

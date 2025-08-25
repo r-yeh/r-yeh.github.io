@@ -81,8 +81,8 @@ const Home = () => {
                         color="tertiary"
                         component={motion.button}
                         variants={iconVariants}
-                        whileHover={{scale: 1.05}}
-                        whileTap={{scale: 0.95}}
+                        whileHover={{scale: 1.2}}
+                        whileTap={{scale: 0.8}}
                     />
                 </Link>
                 <Link target="_blank" rel="noopener noreferrer" href={linkedin_url}>
@@ -92,8 +92,8 @@ const Home = () => {
                         color="tertiary"
                         component={motion.button}
                         variants={iconVariants}
-                        whileHover={{scale: 1.05}}
-                        whileTap={{scale: 0.95}}
+                        whileHover={{scale: 1.2}}
+                        whileTap={{scale: 0.8}}
                     />
                 </Link>
             </motion.div>
