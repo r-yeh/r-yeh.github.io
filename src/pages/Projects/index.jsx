@@ -27,7 +27,8 @@ const Projects = () => {
                             image={project.image}
                             description={project.description}
                             tags={project.tags}
-                            url={project.url}/>
+                            url={project.url}
+                        />
                     </Grid>
                 ))}
             </Grid>

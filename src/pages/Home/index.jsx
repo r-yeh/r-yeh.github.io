@@ -60,15 +60,16 @@ const Home = () => {
                     Welcome to my portfolio! I am a recent Software Engineering graduate from McMaster University
                     currently searching for new opportunities to grow my skills and develop my career.
                 </Typography>
-                <Button sx={{marginTop: "5%", borderRadius: '25px'}}
-                        variant="contained"
-                        color="secondary"
-                        size="large"
-                        startIcon={<DownloadIcon/>}
-                        component={motion.button}
-                        whileHover={{scale: 1.05}}
-                        whileTap={{scale: 0.95}}
-                        onClick={onResumeDownload}
+                <Button
+                    sx={{marginTop: "5%", borderRadius: '25px'}}
+                    variant="contained"
+                    color="secondary"
+                    size="large"
+                    startIcon={<DownloadIcon/>}
+                    component={motion.button}
+                    whileHover={{scale: 1.05}}
+                    whileTap={{scale: 0.95}}
+                    onClick={onResumeDownload}
                 >
                     Download Resume
                 </Button>

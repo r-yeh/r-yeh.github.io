@@ -19,11 +19,15 @@ function NavBar() {
     const theme = useTheme()
 
     return (
-        <AppBar position="fixed" elevation={0} sx={{
-            backgroundColor: alpha(theme.palette.primary.main, 0.88),
-            backdropFilter: 'blur(24px)',
-            boxShadow:  `${theme.palette.secondary.dark} 0px 4px 10px 0px`,
-        }}>
+        <AppBar
+            position="fixed"
+            elevation={0}
+            sx={{
+                backgroundColor: alpha(theme.palette.primary.main, 0.88),
+                backdropFilter: 'blur(24px)',
+                boxShadow: `${theme.palette.secondary.dark} 0px 4px 10px 0px`,
+            }}
+        >
             <div className='nav-bar'>
                 <Toolbar disableGutters>
                     <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
