@@ -2,6 +2,7 @@ import React from 'react';
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
+import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import DownloadIcon from '@mui/icons-material/Download';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -13,6 +14,7 @@ import {motion} from "motion/react"
 import '../../styles/Home.css';
 import resume from '../../assets/files/resume.pdf';
 import {github_url, linkedin_url} from "../../constants/index.js";
+
 
 const Home = () => {
     const iconVariants = {
@@ -37,8 +39,8 @@ const Home = () => {
     }
 
     return (
-        <div>
-            <div className='elements'>
+        <div className='home-page'>
+            <Box sx={{display: 'flex', flexDirection: 'column', '& > *:last-child': {marginTop: '5%'}}}>
                 <Typography variant="h2">Hi I'm
                     <Typography variant="h1" sx={{color: "secondary.light"}}>Ryan Yeh</Typography>
                 </Typography>
@@ -56,24 +58,25 @@ const Home = () => {
                         />
                     </Typography>
                 </Typography>
-                <Typography variant="body1" sx={{marginTop: "5%"}}>
+                <Typography variant="body1">
                     Welcome to my portfolio! I am a recent Software Engineering graduate from McMaster University
                     currently searching for new opportunities to grow my skills and develop my career.
                 </Typography>
-                <Button sx={{marginTop: "5%", borderRadius: '25px'}}
-                        variant="contained"
-                        color="secondary"
-                        size="large"
-                        startIcon={<DownloadIcon/>}
-                        component={motion.button}
-                        whileHover={{scale: 1.05}}
-                        whileTap={{scale: 0.95}}
-                        onClick={onResumeDownload}
-                >
-                    Download Resume
-                </Button>
-            </div>
-            <motion.div className='icons' variants={containerVariants} initial="hidden" animate="show">
+            </Box>
+            <Button
+                sx={{marginTop: "5%", borderRadius: '25px'}}
+                variant="contained"
+                color="secondary"
+                size="large"
+                startIcon={<DownloadIcon/>}
+                component={motion.button}
+                whileHover={{scale: 1.05}}
+                whileTap={{scale: 0.95}}
+                onClick={onResumeDownload}
+            >
+                Download Resume
+            </Button>
+            <motion.div className='icon-buttons' variants={containerVariants} initial="hidden" animate="show">
                 <Link target="_blank" rel="noopener noreferrer" href={github_url}>
                     <IconButton
                         children={<GitHubIcon/>}
@@ -81,8 +84,8 @@ const Home = () => {
                         color="tertiary"
                         component={motion.button}
                         variants={iconVariants}
-                        whileHover={{scale: 1.05}}
-                        whileTap={{scale: 0.95}}
+                        whileHover={{scale: 1.2}}
+                        whileTap={{scale: 0.8}}
                     />
                 </Link>
                 <Link target="_blank" rel="noopener noreferrer" href={linkedin_url}>
@@ -92,8 +95,8 @@ const Home = () => {
                         color="tertiary"
                         component={motion.button}
                         variants={iconVariants}
-                        whileHover={{scale: 1.05}}
-                        whileTap={{scale: 0.95}}
+                        whileHover={{scale: 1.2}}
+                        whileTap={{scale: 0.8}}
                     />
                 </Link>
             </motion.div>

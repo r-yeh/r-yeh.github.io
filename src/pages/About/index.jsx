@@ -22,13 +22,15 @@ const About = () => {
                 sx={{height: '100%'}}
             >
                 <Grid size={{xs: 12, md: 4}}>
-                    <div style={{
-                        display: 'flex',
-                        width: '100%',
-                        height: '85vh',
-                        justifyContent: 'center',
-                        alignItems: 'center'
-                    }}>
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            width: '100%',
+                            height: '85vh',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                    >
                         <motion.img
                             src={AboutPicture} alt='Picture of Me'
                             style={{
@@ -40,7 +42,7 @@ const About = () => {
                             variants={pageVariants}
                             initial="hidden"
                             animate="show"/>
-                    </div>
+                    </Box>
                 </Grid>
                 <Grid size={{xs: 12, md: 8}}>
                     <Paper
@@ -54,16 +56,19 @@ const About = () => {
                             height: '100%',
                             backgroundColor: alpha(theme.palette.primary.main, 0.75),
                             backdropFilter: 'blur(16px)'
-                        }}>
-                        <Box sx={{
-                            width: '100%',
-                            borderBottom: 1,
-                            borderColor: 'divider',
-                            bgcolor: 'primary.main',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            padding: '0.5rem'
-                        }}>
+                        }}
+                    >
+                        <Box
+                            sx={{
+                                width: '100%',
+                                borderBottom: 1,
+                                borderColor: 'divider',
+                                bgcolor: 'primary.main',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                padding: '0.5rem'
+                            }}
+                        >
                             <Typography variant="h3">About Me</Typography>
                         </Box>
                         <div className='about-description'>
@@ -71,11 +76,9 @@ const About = () => {
                                 <Typography variant="body1">
                                     I'm a recent Software Engineering graduate from McMaster University with a strong
                                     interest in software development and testing. I'm actively seeking opportunities
-                                    where I
-                                    can grow as an engineer, expand my skill set, and contribute to impactful projects.
-                                    Driven by a passion for continuous learning, I strive to improve every day and
-                                    remain
-                                    open to exploring new areas in tech.
+                                    where I can grow as an engineer, expand my skill set, and contribute to impactful
+                                    projects. Driven by a passion for continuous learning, I strive to improve every day
+                                    and remain open to exploring new areas in tech.
                                 </Typography>
                                 <Typography variant="body1">
                                     Some languages and tools I've used in the past include:
@@ -94,8 +97,7 @@ const About = () => {
                                 </Typography>
                                 <Typography variant="body1">
                                     Outside of work, I’m passionate about physical training, playing music, and
-                                    unwinding
-                                    with games — allowing me to stay balanced and focused.
+                                    unwinding with games — allowing me to stay balanced and focused.
                                 </Typography>
                             </div>
                         </div>
