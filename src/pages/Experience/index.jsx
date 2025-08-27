@@ -9,7 +9,7 @@ import '../../styles/Experience.css'
 import CustomTab from '../../components/custom-tab/index.jsx';
 import ExperiencePanel from '../../components/experience-panel/index.jsx';
 import {pageVariants} from "../../assets/animation/animation.js";
-import {companies, experience} from "../../constants/index.js";
+import {experience} from "../../constants/index.js";
 
 const Experience = () => {
     const [value, setValue] = React.useState(0);
@@ -44,14 +44,15 @@ const Experience = () => {
                         centered
                         aria-label="Company tabs"
                     >
-                        {companies.map((company, index) => (
-                            <CustomTab key={index} label={company}/>
+                        {experience.map((experience, index) => (
+                            <CustomTab key={index} label={experience.company}/>
                         ))}
                     </Tabs>
                 </Box>
                 {experience.map((experience, index) => (
                     <ExperiencePanel
                         title={experience.title}
+                        company={experience.company}
                         duration={experience.duration}
                         points={experience.points}
                         value={value}

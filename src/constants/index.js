@@ -5,8 +5,6 @@ export const github_url = "https://github.com/r-yeh";
 
 export const linkedin_url = "https://www.linkedin.com/in/ryan-yeh-2008/";
 
-export const companies = ["Ontario Power Generation", "Ontario Ministry of Health", "Sentry Health"]
-
 const opg_experience = [
     "Spearheaded the development of a web dashboard that streamlined tasks performed by the Fuel Handling Operations team by consolidating critical data for improved accessibility and efficiency using Angular/ASP.NET.",
     "Created 3 dynamic Power BI dashboards, enabling tracking and analysis of key metrics, including project spending",
@@ -33,16 +31,19 @@ const sentry_health_experience = [
 export const experience = [
     {
         title: 'Data & Software Development Intern',
+        company: 'Ontario Power Generation',
         duration: 'May 2024 - August 2024',
         points: opg_experience,
     },
     {
         title: 'Software Developer Co-op Student',
+        company: 'Ontario Ministry of Health',
         duration: 'May 2023 - August 2023',
         points: ministry_experience,
     },
     {
         title: 'Software Engineer & QA Intern',
+        company: 'Sentry Health',
         duration: 'May 2021 - August 2022',
         points: sentry_health_experience,
     }
