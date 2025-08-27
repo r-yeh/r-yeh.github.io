@@ -15,6 +15,7 @@ import '../../styles/Home.css';
 import resume from '../../assets/files/resume.pdf';
 import {github_url, linkedin_url} from "../../constants/index.js";
 
+
 const Home = () => {
     const iconVariants = {
         hidden: {scale: 0, opacity: 0, x: -50},

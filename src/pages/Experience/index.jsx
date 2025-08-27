@@ -21,7 +21,7 @@ const Experience = () => {
     const theme = useTheme();
 
     return (
-        <div className='paper'>
+        <div className='experience-page'>
             <Paper
                 sx={{
                     display: 'flex',

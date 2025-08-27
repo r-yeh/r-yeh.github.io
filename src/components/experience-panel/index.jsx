@@ -37,7 +37,7 @@ const ExperiencePanel = (props) => {
                 <Typography variant='h6' sx={{fontWeight: 600, fontStyle: 'italic'}}>@ {company}</Typography>
                 <Typography sx={{marginTop: '1rem'}} variant='h6'>{duration}</Typography>
                 <Divider sx={{marginTop: '0.5rem', bgcolor: 'white'}}/>
-                <Box sx={{flex: 1, display: 'flex', flexDirection: 'column', overflowY: 'auto', minHeight: 0}}>
+                <Box sx={{display: 'flex', flex: 1, flexDirection: 'column', overflowY: 'auto', minHeight: 0}}>
                     <motion.ul
                         key={renderKey}
                         className='experience-list'
