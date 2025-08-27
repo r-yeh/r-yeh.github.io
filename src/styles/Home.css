@@ -1,4 +1,4 @@
-.elements {
+.home-page {
     max-width: 80vh;
     margin: 0;
     display: flex;
@@ -8,7 +8,7 @@
     padding: 8%;
 }
 
-.icons {
+.icon-buttons {
     position: fixed;
     bottom: 2%;
     left: 1%;

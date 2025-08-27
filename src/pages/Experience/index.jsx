@@ -21,12 +21,12 @@ const Experience = () => {
     const theme = useTheme();
 
     return (
-        <div>
+        <div className='paper'>
             <Paper
-                className="paper"
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
+                    height: '100%',
                     backgroundColor: alpha(theme.palette.primary.main, 0.75),
                     backdropFilter: 'blur(16px)'
                 }}
