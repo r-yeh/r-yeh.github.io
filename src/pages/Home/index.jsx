@@ -8,27 +8,17 @@ import DownloadIcon from '@mui/icons-material/Download';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Typewriter from "typewriter-effect";
-import {stagger} from "motion";
-import {motion} from "motion/react"
+import {motion} from "motion/react";
 
 import '../../styles/Home.css';
 import resume from '../../assets/files/resume.pdf';
 import {github_url, linkedin_url} from "../../constants/index.js";
-
+import {listVariants} from "../../assets/animation/animation.js";
 
 const Home = () => {
     const iconVariants = {
         hidden: {scale: 0, opacity: 0, x: -50},
         show: {scale: 1, opacity: 1, x: 0, transition: {duration: 0.8}},
-    };
-
-    const containerVariants = {
-        hidden: {},
-        show: {
-            transition: {
-                delayChildren: stagger(0.25),
-            },
-        },
     };
 
     const onResumeDownload = () => {
@@ -76,7 +66,7 @@ const Home = () => {
             >
                 Download Resume
             </Button>
-            <motion.div className='icon-buttons' variants={containerVariants} initial="hidden" animate="show">
+            <motion.div className='icon-buttons' variants={listVariants} initial="hidden" animate="show">
                 <Link target="_blank" rel="noopener noreferrer" href={github_url}>
                     <IconButton
                         children={<GitHubIcon/>}
