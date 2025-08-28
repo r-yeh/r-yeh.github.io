@@ -1,5 +1,6 @@
 import {HashRouter, Routes, Route} from 'react-router-dom';
 import {ThemeProvider} from '@mui/material/styles';
+import Toolbar from "@mui/material/Toolbar";
 
 import theme from './assets/themes/Theme';
 import './styles/App.css';
@@ -15,6 +16,7 @@ function App() {
             <ThemeProvider theme={theme}>
                 <NavBar/>
                 <div className="page">
+                    <Toolbar/>
                     <Routes>
                         <Route path="/" element={<Home/>}/>
                         <Route path="/experience" element={<Experience/>}/>

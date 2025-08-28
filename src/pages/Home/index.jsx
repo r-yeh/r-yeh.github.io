@@ -8,7 +8,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Typewriter from "typewriter-effect";
-import {motion} from "motion/react"
+import {motion} from "motion/react";
 
 import '../../styles/Home.css';
 import resume from '../../assets/files/resume.pdf';
